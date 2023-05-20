@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/apple-touch-icon-precomposed.png" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/assets/themes/global.css">
+    <script src="/assets/themes/tailwind.cofig.js"></script>
+</head>
+
+<body class="relative">
+    <header class="absolute top-4 w-full ">
+        <div class="container flex justify-between items-center">
+            <div class="logo-brand">
+                <a href="/">
+                    <img src="/assets/img/logo.png" class="w-[135px] lg:w-[160px]" alt="Bookage">
+                </a>
+            </div>
+            <ul class="menu flex gap-9">
+                <li class="relative group">
+                    <a href="#">Purchase</a>
+                    <div
+                        class="h-0.5 bg-black transition-all duration-300 absolute bottom-0 left-0 w-full transform origin-left scale-x-0 group-hover:scale-x-100">
+                    </div>
+                </li>
+                <li class="relative group">
+                    <a href="#">Example</a>
+                    <div
+                        class="h-0.5 bg-black transition-all duration-300 absolute bottom-0 left-0 w-full transform origin-left scale-x-0 group-hover:scale-x-100">
+                    </div>
+                </li>
+                <li class="relative group">
+                    <a href="#">Writer</a>
+                    <div
+                        class="h-0.5 bg-black transition-all duration-300 absolute bottom-0 left-0 w-full transform origin-left scale-x-0 group-hover:scale-x-100">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="banner">
+        <div class="h-screen bg-cover bg-center" style="background-image: url(/assets/img/banner.jpg);">
+            <div class="container h-full">
+                <div class="h-full gap-12 flex flex-col justify-center items-center">
+                    <div class="text-5xl font-droid text-white text-center">
+                        Lorem ipsum dolor sit amet <br>
+                        consectetur adipiscing
+                    </div>
+                    <div class="w-full flex flex-col lg:flex-row gap-4">
+                        <a href="javascript:void"
+                            class="bg-blue ease-in-out duration-300 hover:bg-opacity-80 lg:hover:-translate-y-1 text-white w-full lg:w-[171px] h-[47px] flex justify-center items-center ">
+                            Purchase $8
+                        </a>
+                        <a href="javascript:void"
+                            class="bg-white ease-in-out duration-300 hover:bg-blue lg:hover:-translate-y-1 text-blue hover:text-white w-full lg:w-[171px] h-[47px] flex justify-center items-center">
+                            Free example
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div class="lg:h-[610px] pt-20 lg:pt-0 flex flex-col lg:flex-row gap-8 items-end">
+                <div class="order-last lg:order-first w-full lg:w-[50%] select-none pointer-events-none">
+                    <img src="/assets/img/cover.png" class="mx-auto w-[290px] lg:w-[400px]" alt="About the book">
+                </div>
+                <div class="w-full lg:w-[50%] h-full flex flex-col justify-center gap-4">
+                    <div class="text-2xl lg:text-3xl font-droid text-center lg:text-left">
+                        Lorem ipsum dolor sit amet
+                    </div>
+                    <p class="font-light text-gray text-center lg:text-left lg:pr-22  lg:pl-1 ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="example">
+        <div class="min-h-screen bg-lightGray py-20 flex flex-col justify-center items-center">
+            <div class="container flex flex-col justify-center items-center gap-10">
+                <div class="text-center text-3xl font-droid">
+                    Example pages
+                </div>
+                <div class="grid gap-10 grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-3">
+                    <div class="card-example relative z-10 border border-grayBorder bg-white p-11 flex flex-col gap-4">
+                        <div class="border-b border-grayBorder text-lg font-droid pb-2">
+                            Page 1
+                        </div>
+                        <p class="font-light text-gray">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                            in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                        </p>
+                        <a href="javascript:void"
+                            class="bg-blue ease-in-out duration-300 hover:bg-opacity-80 lg:hover:-translate-y-1 text-white w-[120px] h-[47px] flex justify-center items-center">
+                            Read more
+                        </a>
+                        <div
+                            class="absolute z-[-1] border border-grayBorder bg-white w-[95%] h-[11px] left-3 bottom-[-11px]">
+                        </div>
+                    </div>
+
+                    <div class="card-example relative z-10 border border-grayBorder bg-white p-11 flex flex-col gap-4">
+                        <div class="border-b border-grayBorder text-lg font-droid pb-2">
+                            Page 50
+                        </div>
+                        <p class="font-light text-gray">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                            in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                        </p>
+                        <a href="javascript:void"
+                            class="bg-blue ease-in-out duration-300 hover:bg-opacity-80 lg:hover:-translate-y-1 text-white w-[120px] h-[47px] flex justify-center items-center">
+                            Read more
+                        </a>
+                        <div
+                            class="absolute z-[-1] border border-grayBorder bg-white w-[95%] h-[11px] left-3 bottom-[-11px]">
+                        </div>
+                    </div>
+                    <div class="card-example relative z-10 border border-grayBorder bg-white p-11 flex flex-col gap-4">
+                        <div class="border-b border-grayBorder text-lg font-droid pb-2">
+                            Page 100
+                        </div>
+                        <p class="font-light text-gray">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                            in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                        </p>
+                        <a href="javascript:void"
+                            class="bg-blue ease-in-out duration-300 hover:bg-opacity-80 lg:hover:-translate-y-1 text-white w-[120px] h-[47px] flex justify-center items-center">
+                            Read more
+                        </a>
+                        <div
+                            class="absolute z-[-1] border border-grayBorder bg-white w-[95%] h-[11px] left-3 bottom-[-11px]">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial">
+        <div class="h-[485px] lg:h-[414px] flex justify-center bg-bottom"
+            style="background-image: url(/assets/img/bg_testimonial.jpg);">
+            <div class="container">
+                <div class="h-full flex flex-col gap-8 justify-center">
+                    <div class="text-2xl lg:text-3xl font-droid text-white text-center">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut
+                        labore et dolore magna aliqua. Ut enim”
+                    </div>
+                    <div class="text-white font-light text-center">
+                        Lorem ipsum dolor sit amettur
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="writer">
+        <div class="container">
+            <div class="lg:h-[595px] pt-20 lg:pt-0 flex flex-col lg:flex-row gap-8 items-end">
+                <div class="w-full lg:w-[50%] h-full flex flex-col justify-center">
+                    <div class="text-3xl font-droid">
+                        Lorem Ipsum
+                    </div>
+                    <p class="text-xl text-blue">
+                        Writer
+                    </p>
+                    <p class="font-light text-gray mt-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehe nderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est
+                    </p>
+                </div>
+                <div class="w-full lg:w-[50%] select-none pointer-events-none">
+                    <img src="/assets/img/writer.jpg" class="mx-auto" alt="About the book">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="device">
+        <div class="bg-blue pt-20 lg:pt-0 lg:h-screen flex items-end">
+            <div class="container">
+                <div class="text-center flex flex-col gap-5">
+                    <div class="text-3xl text-white font-droid">
+                        Lorem Ipsum
+                    </div>
+                    <p class="font-light text-white mb-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt
+                        ut
+                        labore
+                        et
+                        dolore magna aliqua. Ut enim ad minim
+                    </p>
+                    <img src="/assets/img/devices.png" alt="Devices">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-darkGray h-auto lg:h-[286px] pt-14 pb-14">
+        <div class="container">
+            <div class="flex flex-col gap-16 lg:flex-row justify-between">
+                <div class="flex flex-col gap-4">
+                    <a href="javascript:void"
+                        class="bg-blue ease-in-out duration-300 hover:bg-opacity-80 hover:-translate-y-1 text-white flex justify-center items-center w-full lg:w-[171px] h-[47px]">
+                        Purchase $8
+                    </a>
+                    <div class="font-light text-center lg:text-left text-sm text-white">Try our Free Sample Book First</div>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <div class="font-droid text-center lg:text-left text-white">Subscribe to Newsletter</div>
+                    <div class="flex">
+                        <input type="text" placeholder="Your Email"
+                            class="focus:outline-none placeholder:text-black w-[240px] px-2">
+                        <button
+                            class="bg-blue ease-in-out duration-300 hover:bg-opacity-80 text-white w-[130px] h-[50px] flex justify-center items-center ">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
