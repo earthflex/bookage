@@ -16,7 +16,7 @@
 </head>
 
 <body class="relative">
-    <header id="header" class="fixed top-0 z-40 h-[80px] flex  w-full">
+    <header id="header" class="fixed top-0 z-40 h-[80px] flex w-full">
         <div class="container flex justify-between items-center">
             <div class="logo-brand">
                 <a href="/">
@@ -31,26 +31,26 @@
                     </div>
                 </li>
                 <li class="relative group">
-                    <a href="#">Example</a>
+                    <a href="#example">Example</a>
                     <div
                         class="h-0.5 bg-black transition-all duration-300 absolute bottom-0 left-0 w-full transform origin-left scale-x-0 group-hover:scale-x-100">
                     </div>
                 </li>
                 <li class="relative group">
-                    <a href="#">Writer</a>
+                    <a href="#writer">Writer</a>
                     <div
                         class="h-0.5 bg-black transition-all duration-300 absolute bottom-0 left-0 w-full transform origin-left scale-x-0 group-hover:scale-x-100">
                     </div>
                 </li>
             </ul>
             <div class="block lg:hidden">
-                <div id="hamburger-menu"
+                <div id="hamburgerMenu"
                     class="h-12 w-12 cursor-pointer relative group flex flex-col justify-center items-center">
                     <div class="bg-black h-[3px] w-8 mb-2"></div>
                     <div class="bg-black h-[3px] w-8 mb-2 group-hover:w-6 ease-in-out duration-300"></div>
                     <div class="bg-black h-[3px] w-8"></div>
                 </div>
-                <div id="menu-full" class="hidden absolute z-30 top-0 left-0 w-full h-full min-h-screen ">
+                <div id="menuFull" class="bg hidden absolute z-30 top-0 left-0 w-full h-full min-h-screen">
                     <div id="menu-bg" class="absolute left-0 top-0 w-full h-full z-10">
                         <span class="w-full h-[33.34%] block bg-white"></span>
                         <span class="w-full h-[33.34%] block bg-white"></span>
@@ -85,13 +85,13 @@
                                     </div>
                                 </li>
                                 <li class="py-3 text-2xl border-b border-grayBorder relative group overflow-hidden ">
-                                    <a href="#" class="leading-none">Example</a>
+                                    <a href="#example" class="leading-none">Example</a>
                                     <div
                                         class="h-0.5 bg-black transition-all duration-300 absolute bottom-0 left-0 w-full transform origin-left scale-x-0 group-hover:scale-x-100">
                                     </div>
                                 </li>
                                 <li class="py-3 text-2xl relative group overflow-hidden ">
-                                    <a href="#" class="leading-none">Writer</a>
+                                    <a href="#writer" class="leading-none">Writer</a>
                                     <div
                                         class="h-0.5 bg-black transition-all duration-300 absolute bottom-0 left-0 w-full transform origin-left scale-x-0 group-hover:scale-x-100">
                                     </div>
@@ -108,7 +108,8 @@
         </div>
     </header>
     <section class="banner">
-        <div class="h-screen bg-cover bg- bg-center bg-no-repeat overflow-hidden" style="background-image: url(/assets/img/banner.jpg);">
+        <div class="bg h-screen bg-cover bg- bg-center bg-no-repeat origin-bottom overflow-hidden"
+            style="background-image: url(/assets/img/banner.jpg);">
             <div class="container h-full">
                 <div class="h-full gap-12 flex flex-col justify-center items-center">
                     <div id="bannerText" class="text-5xl font-droid text-white text-center">
@@ -117,11 +118,11 @@
                     </div>
                     <div class="w-full flex flex-col lg:flex-row justify-center gap-4">
                         <a href="javascript:void"
-                            class="btn-banner bg-blue ease-in-out duration-300 hover:bg-opacity-80 lg:hover:-translate-y-1 text-white w-full lg:w-[171px] h-[47px] flex justify-center items-center ">
+                            class="btn-banner bg-blue ease-in-out duration-300 hover:bg-opacity-80 opacity-0 translate-y-20 lg:hover:-translate-y-1 text-white w-full lg:w-[171px] h-[47px] flex justify-center items-center ">
                             Purchase $8
                         </a>
                         <a href="javascript:void"
-                            class="btn-banner bg-white ease-in-out duration-300 hover:bg-blue lg:hover:-translate-y-1 text-blue hover:text-white w-full lg:w-[171px] h-[47px] flex justify-center items-center">
+                            class="btn-banner  bg-white ease-in-out duration-300 hover:bg-blue opacity-0 translate-y-20 lg:hover:-translate-y-1 text-blue hover:text-white w-full lg:w-[171px] h-[47px] flex justify-center items-center">
                             Free example
                         </a>
                     </div>
@@ -129,17 +130,19 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="lg:h-[610px] pt-20 lg:pt-0 flex flex-col lg:flex-row gap-8 items-end">
                 <div class="order-last lg:order-first w-full lg:w-[50%] select-none pointer-events-none">
                     <img src="/assets/img/cover.png" class="mx-auto w-[290px] lg:w-[400px]" alt="About the book">
                 </div>
                 <div class="w-full lg:w-[50%] h-full flex flex-col justify-center gap-4">
-                    <div class="text-2xl lg:text-3xl font-droid text-center lg:text-left">
+                    <div
+                        class="heading relative overflow-hidden text-2xl lg:text-3xl font-droid text-center lg:text-left">
                         Lorem ipsum dolor sit amet
                     </div>
-                    <p class="font-light text-gray text-center lg:text-left lg:pr-22  lg:pl-1 ">
+                    <p
+                        class="paragraph relative overflow-hidden font-light text-gray text-center lg:text-left lg:pr-22  lg:pl-1 ">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
@@ -148,19 +151,18 @@
                         non proident, sunt in culpa qui officia deserunt mollit
                     </p>
                 </div>
-
             </div>
         </div>
     </section>
-
-    <section class="example">
+    <section class="example" id="example">
         <div class="min-h-screen bg-lightGray py-20 flex flex-col justify-center items-center">
             <div class="container flex flex-col justify-center items-center gap-10">
-                <div class="text-center text-3xl font-droid">
+                <div class="heading text-center text-3xl font-droid">
                     Example pages
                 </div>
-                <div class="grid gap-10 grid-cols-1 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-3">
-                    <div class="card-example relative z-10 border border-grayBorder bg-white p-11 flex flex-col gap-4">
+                <div class="grid gap-10 grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3">
+                    <div
+                        class="card-example relative z-[10] border border-grayBorder bg-white p-11 flex flex-col gap-4">
                         <div class="border-b border-grayBorder text-lg font-droid pb-2">
                             Page 1
                         </div>
@@ -183,7 +185,7 @@
                         </div>
                     </div>
 
-                    <div class="card-example relative z-10 border border-grayBorder bg-white p-11 flex flex-col gap-4">
+                    <div class="card-example relative z-[9] border border-grayBorder bg-white p-11 flex flex-col gap-4">
                         <div class="border-b border-grayBorder text-lg font-droid pb-2">
                             Page 50
                         </div>
@@ -205,7 +207,7 @@
                             class="absolute z-[-1] border border-grayBorder bg-white w-[95%] h-[11px] left-3 bottom-[-11px]">
                         </div>
                     </div>
-                    <div class="card-example relative z-10 border border-grayBorder bg-white p-11 flex flex-col gap-4">
+                    <div class="card-example relative z-[8] border border-grayBorder bg-white p-11 flex flex-col gap-4">
                         <div class="border-b border-grayBorder text-lg font-droid pb-2">
                             Page 100
                         </div>
@@ -232,33 +234,33 @@
         </div>
     </section>
     <section class="testimonial">
-        <div class="h-[485px] lg:h-[414px] flex justify-center bg-bottom"
+        <div class="bg h-[485px] lg:h-[414px] flex justify-center bg-bottom"
             style="background-image: url(/assets/img/bg_testimonial.jpg);">
             <div class="container">
-                <div class="h-full flex flex-col gap-8 justify-center">
+                <div class="heading h-full flex flex-col gap-8 justify-center">
                     <div class="text-2xl lg:text-3xl font-droid text-white text-center">
                         “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut
                         labore et dolore magna aliqua. Ut enim”
                     </div>
-                    <div class="text-white font-light text-center">
+                    <div class="paragraph text-white font-light text-center">
                         Lorem ipsum dolor sit amettur
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="writer">
+    <section class="writer" id="writer">
         <div class="container">
             <div class="lg:h-[595px] pt-20 lg:pt-0 flex flex-col lg:flex-row gap-8 items-end">
                 <div class="w-full lg:w-[50%] h-full flex flex-col justify-center">
-                    <div class="text-3xl font-droid">
+                    <div class="heading text-3xl font-droid">
                         Lorem Ipsum
                     </div>
-                    <p class="text-xl font-light text-blue">
+                    <p class="sub-heading text-xl font-light text-blue">
                         Writer
                     </p>
-                    <p class="font-light text-gray mt-4">
+                    <p class="paragraph font-light text-gray mt-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commo do consequat. Duis aute irure dolor in reprehe nderit in
@@ -276,10 +278,10 @@
         <div class="bg-blue pt-20 lg:pt-0 lg:h-screen flex items-end">
             <div class="container">
                 <div class="text-center flex flex-col gap-5">
-                    <div class="text-3xl text-white font-droid">
+                    <div class="heading text-3xl text-white font-droid">
                         Lorem Ipsum
                     </div>
-                    <p class="font-light text-white mb-4">
+                    <p class="paragraph font-light text-white mb-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt
                         ut
                         labore
@@ -316,6 +318,8 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
     <script src="/assets/script/app.js"></script>
     <script src="/assets/script/animate.js"></script>
