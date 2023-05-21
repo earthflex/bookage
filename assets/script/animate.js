@@ -183,6 +183,11 @@ writer.from('.writer .heading', {
     y: 100,
     opacity: 0,
     duration: .6
+}).from('.writer .social', {
+    y: 60,
+    opacity: 0,
+    duration: .8,
+    stagger: 0.01,
 })
 // == end writer ==
 
