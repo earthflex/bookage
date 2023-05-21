@@ -33,3 +33,26 @@
      font-family: 'Roboto', sans-serif;
      /* == default font == */
  }
+
+ .no-scroll {
+     overflow: hidden !important;
+     overscroll-behavior: contain;
+     position: relative !important;
+     padding-left: 0;
+     padding-top: 0;
+     padding-right: 0;
+     margin-left: 0;
+     margin-top: 0;
+     margin-right: 7px !important;
+ }
+
+ #bannerText {
+     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+     line-height: 1.2;
+ }
+
+ #bannerText .char {
+     transform: translateY(120px);
+     transition: transform .5s;
+
+ }
