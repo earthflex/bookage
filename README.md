@@ -1,7 +1,9 @@
 
 # Bookage - Workshop
 
-Link ตัวอย่าง : [bookage-earthflex.netlify.app](https://bookage-earthflex.netlify.app/)
+Link ตัวอย่าง : https://bookage-earthflex.netlify.app/
+
+figma : https://www.figma.com/file/Y9CXi0HeIuQp9hB7Xc99Vj/Bookage?type=design&node-id=1%3A3682&t=fWHRGTXZcL96uPdE-1
 
 ## เทคโนโลยีที่ใช้
 1. html
