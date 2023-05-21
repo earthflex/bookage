@@ -7,15 +7,21 @@ window.addEventListener('scroll', () => {
     });
 });
 
-document.querySelector('#hamburger-menu').addEventListener('click', () => {
-    document.body.classList.add('no-scroll');
+const tl = gsap.timeline();
 
-    tl.clear()
-        .set('#menu-full', {
+document.querySelector('#hamburgerMenu').addEventListener('click', () => {
+    tl
+        .to('#menuFull', {
+            delay: 0,
+            duration: 0,
             display: 'block',
+            ease: 'Expo.easeOut',
         })
-        .set('#hamburger-menu', {
+        .to('#hamburgerMenu', {
+            delay: 0,
+            duration: 0,
             display: 'none',
+            ease: 'Expo.easeInOut',
         })
         .from('#menu-bg span', {
             duration: .8,
@@ -33,16 +39,12 @@ document.querySelector('#hamburger-menu').addEventListener('click', () => {
 });
 
 document.querySelector('#close-menu').addEventListener('click', () => {
-    document.body.classList.remove('no-scroll');
-    tl.clear()
-        .to('#menu-full', {
+    tl.to('#menuFull', {
+        duration: .2,
+        display: 'none',
+    })
+        .to('#hamburgerMenu', {
             duration: 0,
-            onComplete: function () {
-                document.querySelector('#menu-full').style.display = 'none';
-            },
-            ease: 'Expo.easeInOut',
-        })
-        .set('#hamburger-menu', {
             display: 'flex',
-        });
+        })
 });
