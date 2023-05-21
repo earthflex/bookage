@@ -7,9 +7,9 @@ window.addEventListener('scroll', () => {
     });
 });
 
-const tl = gsap.timeline();
-
 document.querySelector('#hamburger-menu').addEventListener('click', () => {
+    document.body.classList.add('no-scroll');
+
     tl.clear()
         .set('#menu-full', {
             display: 'block',
@@ -33,9 +33,10 @@ document.querySelector('#hamburger-menu').addEventListener('click', () => {
 });
 
 document.querySelector('#close-menu').addEventListener('click', () => {
+    document.body.classList.remove('no-scroll');
     tl.clear()
         .to('#menu-full', {
-            duration: 1,
+            duration: 0,
             onComplete: function () {
                 document.querySelector('#menu-full').style.display = 'none';
             },
