@@ -1,6 +1,8 @@
 
 # Bookage - Workshop
 
+Link ตัวอย่าง : [bookage-earthflex.netlify.app](https://bookage-earthflex.netlify.app/)
+
 ## เทคโนโลยีที่ใช้
 1. html
 2. css
