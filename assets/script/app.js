@@ -10,54 +10,38 @@ window.addEventListener('scroll', () => {
 const tl = gsap.timeline();
 
 document.querySelector('#hamburger-menu').addEventListener('click', () => {
-    tl
-        .to('#menu-full', {
-            delay: 0,
-            duration: 0,
+    tl.clear()
+        .set('#menu-full', {
             display: 'block',
-            ease: 'Expo.easeOut',
         })
-        .to('#hamburger-menu', {
-            delay: 0,
-            duration: 0,
+        .set('#hamburger-menu', {
             display: 'none',
-            ease: 'Expo.easeInOut',
         })
         .from('#menu-bg span', {
-            delay: 0,
             duration: .8,
             x: '100%',
             stagger: 0.1,
             ease: 'Expo.easeInOut',
         })
         .from('#listMenu li', {
-            delay: 0,
             duration: 1,
             y: '100%',
             opacity: 0,
             stagger: 0.2,
             ease: 'easeOut',
-        })
+        });
 });
 
 document.querySelector('#close-menu').addEventListener('click', () => {
-    tl
+    tl.clear()
         .to('#menu-full', {
-            duration: 0,
-            display: 'none',
+            duration: 1,
+            onComplete: function () {
+                document.querySelector('#menu-full').style.display = 'none';
+            },
             ease: 'Expo.easeInOut',
         })
-        .to('#hamburger-menu', {
-            duration: .5,
+        .set('#hamburger-menu', {
             display: 'flex',
-            ease: 'Expo.easeInOut',
-        })
-        .from('#menu-bg span', {
-            delay: 0,
-            duration: .8,
-            x: '-100%',
-            stagger: 0.1,
-            ease: 'Expo.easeInOut',
-        })
+        });
 });
-
